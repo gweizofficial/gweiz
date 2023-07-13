@@ -1,0 +1,249 @@
+
+@font-face {
+    font-family: 'Aquire';
+    src: url('../font/AquireLight.woff2') format('woff2'),
+        url('../font/AquireLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Aquire';
+    src: url('../font/AquireRegular.woff2') format('woff2'),
+        url('../font/AquireRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Hyperwave One';
+    src: url('../font/HyperwaveOne.woff2') format('woff2'),
+        url('../font/HyperwaveOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../font/HelveticaNeue-Medium.woff2') format('woff2'),
+        url('../font/HelveticaNeue-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../font/HelveticaNeue.woff2') format('woff2'),
+        url('../font/HelveticaNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Hyperwave Three';
+    src: url('../font/HyperwaveThree.woff2') format('woff2'),
+        url('../font/HyperwaveThree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Hyperwave Two';
+    src: url('../font/HyperwaveTwo.woff2') format('woff2'),
+        url('../font/HyperwaveTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Bebas Kai';
+    src: url('../font/BebasKai.woff2') format('woff2'),
+        url('../font/BebasKai.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: var(--heading-font)
+}
+
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+    color: var(--body-font-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--body-font-color);
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+li,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    max-width: 90%;
+}
+/* gwiz-lab-page */
+
+.gweiz-lab-new .left-img {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gweiz-lab-new .right-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -10px;
+}
+.gweiz-lab-new video#spining-video {
+    width: 63PX;
+}
+.gweiz-lab-new .left-img img {
+    margin-left: -12px;
+    width: 710px;
+}
+.gweiz-lab-new .logo-title h1 {
+    color: #fff;
+    font-size: 21px;
+    letter-spacing: 6px;
+    font-family: 'Aquire';
+    margin-top: 20px
+}
+.gweiz-lab-new p.right-content-pera {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 16px;
+    font-family: 'Helvetica Neue';
+    letter-spacing: 0.3px;
+}
+.gweiz-lab-new p.learn-more {
+    color: #fff;
+}
+.gweiz-lab-new .learn-more a {border-bottom: 1px solid #fff;}
+
+.gweiz-lab-new .logo-title {
+    width: 198px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width: 1024px){
+    .page-wrapper .row {
+    display: flex;
+}
+.gweiz-lab-new .gwiz-lab-left-col {
+    order: 2;
+    width: 100%;
+}
+.gweiz-lab-new .gwiz-lab-right-col{
+    width: 100%;
+}
+.gweiz-lab-new .right-content {
+    height: auto;
+    padding: 50px 20px;
+    align-items: center;
+    margin-left: 0;
+}
+.gweiz-lab-new .left-img {
+    height: auto;
+}
+.gweiz-lab-new p.right-content-pera, .gweiz-lab-new p.learn-more {
+    text-align: center;
+    max-width: 520px;
+}
+
+.gweiz-lab-new p.right-content-pera br {
+    display: none;
+}
+
+.page-wrapper.gweiz-lab-new{
+    height: 100vh;
+}
+}
+@media(max-width: 440px){
+    .gweiz-lab-new .left-img img {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media(width: 1024px){
+    .gweiz-lab-new .left-img img {
+        width: 800px;
+    }
+    .gweiz-lab-new .left-img{
+        position: absolute;
+        bottom: 0;
+    }
+    .gweiz-lab-new p.right-content-pera br {
+        display: block;
+    }
+
+}
+@media(width: 820px){
+    /* .gweiz-lab-new .left-img img {
+        width: 800px;
+    } */
+    .gweiz-lab-new .left-img{
+        position: absolute;
+        bottom: 0;
+    }
+    .gweiz-lab-new p.right-content-pera br {
+        display: block;
+    }
+
+}
+
+
